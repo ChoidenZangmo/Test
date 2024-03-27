@@ -1,4 +1,3 @@
-
 # Asking the user to input their age
 age = int(input("Enter your age: "))
 

@@ -26,8 +26,8 @@ while True:
             print("No patients in the queue.")
         else:
             print("Current Patient Queue:")
-            queue_size = patient_queue.qsize()
-            for _ in range(queue_size):
+            queue_size = patient_queue.qsize()     # OR "for patient in list(patient_queue.patient):/print(patient)/print()"
+            for _ in range(queue_size):          
                 patient = patient_queue.get()
                 print(patient)
                 patient_queue.put(patient)
